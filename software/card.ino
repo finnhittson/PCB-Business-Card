@@ -13,7 +13,7 @@ void setup() {
 
   scanI2CAddr();
 
-  if (false) {
+  if (true) {
     uint8_t block0[16];
     block0[12] = 0xE1;
     block0[13] = 0x10;
@@ -30,7 +30,8 @@ void setup() {
     delay(100);
   }
 
-  if (true) {
+  // here just for debugging
+  if (false) {
     uint8_t block0[16];
     readPage(BLK_ADDR_0, block0);
     delay(100);
